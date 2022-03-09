@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="apActivite" prefHeight="575.0" prefWidth="1234.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.connexioncultun.tests.AfficherActiviteController">
+   <children>
+      <TableView fx:id="tvActivite" layoutX="204.0" layoutY="30.0" prefHeight="511.0" prefWidth="990.0" stylesheets="@../css/fullPackStyling.css">
+        <columns>
+          <TableColumn fx:id="tcNom" prefWidth="123.0" text="Nom" />
+          <TableColumn fx:id="tcType" minWidth="0.0" text="Type" />
+            <TableColumn fx:id="tcDate" minWidth="0.0" prefWidth="133.0" text="Date" />
+            <TableColumn fx:id="tcLocalisation" prefWidth="105.0" text="Localisation" />
+            <TableColumn fx:id="tcNombreplaces" prefWidth="139.0" text="Nombre de places" />
+            <TableColumn fx:id="tcPrix" prefWidth="52.0" text="Prix" />
+            <TableColumn fx:id="tcDuree" prefWidth="163.0" text="Durée" />
+            <TableColumn fx:id="tcHoraire" prefWidth="117.0" text="Horaire" />
+            <TableColumn fx:id="tcRef" prefWidth="75.0" text="Reference" />
+        </columns>
+      </TableView>
+      <Button layoutX="14.0" layoutY="214.0" mnemonicParsing="false" onAction="#supprimerActivite" prefHeight="31.0" prefWidth="183.0" stylesheets="@../css/fullPackStyling.css" text="Supprimer activité" textFill="WHITE" />
+      <Button layoutX="14.0" layoutY="254.0" mnemonicParsing="false" onAction="#AllerModif" prefHeight="31.0" prefWidth="183.0" stylesheets="@../css/fullPackStyling.css" text="Modifier activité" textFill="WHITE" />
+      <Button layoutX="14.0" layoutY="172.0" mnemonicParsing="false" onAction="#AllerAjout" prefHeight="31.0" prefWidth="183.0" stylesheets="@../css/fullPackStyling.css" text="Ajouter  une activité" textFill="WHITE" />
+      <Button layoutX="73.0" layoutY="311.0" mnemonicParsing="false" onAction="#Back" stylesheets="@../css/fullPackStyling.css" text="Retour" textFill="WHITE" />
+      <Button layoutX="14.0" layoutY="134.0" mnemonicParsing="false" onAction="#alleres" prefHeight="31.0" prefWidth="183.0" stylesheets="@../css/fullPackStyling.css" text="Placer une reservation" textFill="WHITE" />
+      <ChoiceBox fx:id="cbRecherche" layoutX="14.0" layoutY="45.0" prefHeight="31.0" prefWidth="183.0" style="-fx-border-color: purple; -fx-border-width: 2;" stylesheets="@../css/LoginClient.css" />
+      <TextField fx:id="tfRecherche" layoutX="14.0" layoutY="87.0" prefHeight="31.0" prefWidth="183.0" promptText="Exemple : Patrimoine" style="-fx-border-color: purple; -fx-border-width: 2;" stylesheets="@../css/LoginClient.css" />
+   </children>
+</AnchorPane>

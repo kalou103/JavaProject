@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="437.0" prefWidth="693.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.connexioncultun.tests.AjoutActiviteController">
+   <children>
+      <Label layoutX="190.0" layoutY="54.0" text="Ajouter une activité">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="344.0" layoutY="249.0" text="Localisation :" />
+      <Label layoutX="344.0" layoutY="191.0" text="Durée :" />
+      <Label layoutX="344.0" layoutY="140.0" text="Horaire :" />
+      <Label layoutX="45.0" layoutY="298.0" text="Date :" />
+      <Label layoutX="45.0" layoutY="247.0" text="Prix :" />
+      <Label layoutX="45.0" layoutY="190.0" text="Type :" />
+      <Label layoutX="45.0" layoutY="139.0" text="Nom :" />
+      <Label layoutX="344.0" layoutY="300.0" text="Nombre de places :" />
+      <Separator layoutX="329.0" layoutY="116.0" orientation="VERTICAL" prefHeight="255.0" prefWidth="5.0" />
+      <TextField fx:id="tfNom" layoutX="113.0" layoutY="135.0" prefHeight="35.0" prefWidth="198.0" promptText="Entrer le nom  de l'activité" style="-fx-border-color: purple; -fx-border-width: 2;" stylesheets="@../css/LoginClient.css" />
+      <TextField fx:id="tfLocalisation" layoutX="474.0" layoutY="244.0" promptText="Entrer la localisation" style="-fx-border-color: purple; -fx-border-width: 2;" stylesheets="@../css/LoginClient.css" />
+      <TextField fx:id="tfDuree" layoutX="474.0" layoutY="186.0" style="-fx-border-color: purple; -fx-border-width: 2;" stylesheets="@../css/LoginClient.css" />
+      <Button fx:id="btnAjouter" layoutX="496.0" layoutY="371.0" mnemonicParsing="false" onAction="#AjouterActivite" prefHeight="35.0" prefWidth="129.0" stylesheets="@../css/fullPackStyling.css" text="Ajouter" textFill="WHITE" />
+      <ChoiceBox fx:id="cbType" layoutX="113.0" layoutY="186.0" prefHeight="35.0" prefWidth="198.0" style="-fx-border-color: purple; -fx-border-width: 2;" stylesheets="@../css/LoginClient.css" />
+      <ChoiceBox fx:id="cbHoraire" layoutX="474.0" layoutY="135.0" prefHeight="35.0" prefWidth="191.0" style="-fx-border-color: purple; -fx-border-width: 2;" stylesheets="@../css/LoginClient.css" />
+      <Button layoutX="421.0" layoutY="376.0" mnemonicParsing="false" onAction="#back" stylesheets="@../css/fullPackStyling.css" text="Retour" textFill="WHITE" />
+      <DatePicker fx:id="dpDate" layoutX="113.0" layoutY="293.0" prefHeight="35.0" prefWidth="198.0" style="-fx-border-color: purple; -fx-border-width: 2;" stylesheets="@../css/LoginClient.css" />
+      <Spinner fx:id="snbr" editable="true" layoutX="474.0" layoutY="293.0" style="-fx-border-color: purple; -fx-border-width: 2;" stylesheets="@../css/LoginClient.css" />
+      <Spinner fx:id="sPrix" editable="true" layoutX="113.0" layoutY="234.0" prefHeight="35.0" prefWidth="198.0" style="-fx-border-color: purple; -fx-border-width: 2;" stylesheets="@../css/LoginClient.css" />
+   </children>
+</AnchorPane>

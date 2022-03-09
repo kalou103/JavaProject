@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="405.0" prefWidth="718.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.connexioncultun.tests.ModifierActiviteController">
+   <children>
+      <Label layoutX="212.0" layoutY="46.0" text="Modifier une activité">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="349.0" layoutY="128.0" text="Horaire ;" />
+      <Label layoutX="55.0" layoutY="298.0" text="Date :" />
+      <Label layoutX="54.0" layoutY="242.0" text="Prix :" />
+      <Label layoutX="54.0" layoutY="183.0" text="Type :" />
+      <Label layoutX="51.0" layoutY="131.0" text="Nom :" />
+      <Label layoutX="349.0" layoutY="180.0" text="Durée :" />
+      <Label layoutX="349.0" layoutY="295.0" text="Nombre de places :" />
+      <Label layoutX="349.0" layoutY="239.0" text="Localisation :" />
+      <Separator layoutX="328.0" layoutY="110.0" orientation="VERTICAL" prefHeight="227.0" prefWidth="6.0" />
+      <TextField fx:id="tfNom" layoutX="125.0" layoutY="127.0" promptText="Nom de l'activité" style="-fx-border-color: purple; -fx-border-width: 2;" stylesheets="@../css/LoginClient.css" />
+      <TextField fx:id="tfDuree" layoutX="478.0" layoutY="176.0" style="-fx-border-color: purple; -fx-border-width: 2;" stylesheets="@../css/LoginClient.css" />
+      <TextField fx:id="tfLocalisation" layoutX="478.0" layoutY="235.0" style="-fx-border-color: purple; -fx-border-width: 2;" stylesheets="@../css/LoginClient.css" />
+      <ComboBox fx:id="cbHoraire" layoutX="478.0" layoutY="127.0" prefHeight="35.0" prefWidth="191.0" style="-fx-border-color: purple; -fx-border-width: 2;" stylesheets="@../css/LoginClient.css" />
+      <ComboBox fx:id="cbType" layoutX="125.0" layoutY="179.0" prefHeight="35.0" prefWidth="191.0" style="-fx-border-color: purple; -fx-border-width: 2;" stylesheets="@../css/LoginClient.css" />
+      <Button layoutX="527.0" layoutY="344.0" mnemonicParsing="false" onAction="#ModifierActivite" prefHeight="25.0" prefWidth="131.0" stylesheets="@../css/fullPackStyling.css" text="Valider modification" textFill="WHITE" />
+      <Button layoutX="435.0" layoutY="344.0" mnemonicParsing="false" onAction="#Back" stylesheets="@../css/fullPackStyling.css" text="Retour" textFill="WHITE" />
+      <DatePicker fx:id="dpDate" layoutX="124.0" layoutY="293.0" prefHeight="35.0" prefWidth="191.0" style="-fx-border-color: purple; -fx-border-width: 2;" stylesheets="@../css/LoginClient.css" />
+      <Spinner fx:id="sPrix" editable="true" layoutX="125.0" layoutY="235.0" style="-fx-border-color: purple; -fx-border-width: 2;" stylesheets="@../css/LoginClient.css" />
+      <Spinner fx:id="sNbre" editable="true" layoutX="478.0" layoutY="290.0" style="-fx-border-color: purple; -fx-border-width: 2;" stylesheets="@../css/LoginClient.css" />
+   </children>
+</AnchorPane>

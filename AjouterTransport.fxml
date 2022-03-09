@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="436.0" prefWidth="705.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.connexioncultun.tests.AjouterTransportController">
+   <children>
+      <Label layoutX="31.0" layoutY="132.0" text="Type transport :" />
+      <Label layoutX="201.0" layoutY="40.0" text="Ajouter un transport">
+         <font>
+            <Font name="System Bold Italic" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="179.0" text="Départ :" />
+      <Label layoutX="31.0" layoutY="229.0" text="Destination : " />
+      <Label layoutX="31.0" layoutY="284.0" text="Date départ :" />
+      <Label layoutX="355.0" layoutY="233.0" text="Nombre de places :" />
+      <Label layoutX="357.0" layoutY="128.0" text="Heure départ : " />
+      <Label layoutX="355.0" layoutY="283.0" text="Durée du trajet :" />
+      <Label layoutX="361.0" layoutY="333.0" prefHeight="21.0" prefWidth="118.0" text="Prix du billet:" />
+      <TextField fx:id="tfType" layoutX="135.0" layoutY="128.0" style="-fx-border-color: purple; -fx-border-width: 2;" stylesheets="@../css/LoginClient.css" />
+      <TextField fx:id="tfDepart" layoutX="135.0" layoutY="175.0" style="-fx-border-color: purple; -fx-border-width: 2;" stylesheets="@../css/LoginClient.css" />
+      <TextField fx:id="tfDestination" layoutX="135.0" layoutY="225.0" style="-fx-border-color: purple; -fx-border-width: 2;" stylesheets="@../css/LoginClient.css" />
+      <TextField fx:id="tfDuree" layoutX="487.0" layoutY="276.0" prefHeight="35.0" prefWidth="191.0" style="-fx-border-color: purple; -fx-border-width: 2;" stylesheets="@../css/LoginClient.css" />
+      <Separator layoutX="338.0" layoutY="103.0" orientation="VERTICAL" prefHeight="259.0" prefWidth="4.0" />
+      <Button layoutX="508.0" layoutY="388.0" mnemonicParsing="false" onAction="#AjouterTransport" prefHeight="31.0" prefWidth="144.0" stylesheets="@../css/fullPackStyling.css" text="Ajouter transport" textFill="WHITE" />
+      <ChoiceBox fx:id="cbHeure_dep" layoutX="486.0" layoutY="123.0" prefHeight="35.0" prefWidth="191.0" style="-fx-border-color: purple; -fx-border-width: 2;" stylesheets="@../css/LoginClient.css" />
+      <Label layoutX="31.0" layoutY="333.0" text="Date arrivée :" />
+      <Label layoutX="357.0" layoutY="179.0" text="Heure arrivée : " />
+      <ChoiceBox fx:id="cbHeure_arrivee" layoutX="486.0" layoutY="172.0" prefHeight="35.0" prefWidth="191.0" style="-fx-border-color: purple; -fx-border-width: 2;" stylesheets="@../css/LoginClient.css" />
+      <Button layoutX="432.0" layoutY="388.0" mnemonicParsing="false" onAction="#back" stylesheets="@../css/fullPackStyling.css" text="Retour" textFill="WHITE" />
+      <DatePicker fx:id="dpdep" layoutX="135.0" layoutY="278.0" prefHeight="35.0" prefWidth="191.0" style="-fx-border-color: purple; -fx-border-width: 2;" stylesheets="@../css/LoginClient.css" />
+      <DatePicker fx:id="dparr" layoutX="135.0" layoutY="328.0" prefHeight="35.0" prefWidth="191.0" style="-fx-border-color: purple; -fx-border-width: 2;" stylesheets="@../css/LoginClient.css" />
+      <Spinner fx:id="sPlaces" editable="true" layoutX="487.0" layoutY="222.0" prefHeight="35.0" prefWidth="191.0" style="-fx-border-color: purple; -fx-border-width: 2;" stylesheets="@../css/LoginClient.css" />
+      <Spinner fx:id="sPrix" editable="true" layoutX="487.0" layoutY="328.0" prefHeight="35.0" prefWidth="191.0" style="-fx-border-color: purple; -fx-border-width: 2;" stylesheets="@../css/LoginClient.css" />
+   </children>
+</AnchorPane>

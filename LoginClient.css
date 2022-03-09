@@ -1,0 +1,29 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 4, 2022, 9:10:18 PM
+    Author     : moete
+*/
+.left-side-background
+{
+    -fx-background-color : #800080;
+}
+.transparent
+{
+    -fx-background-color: rgba(0,0,0,0);
+}
+
+.border
+{
+    -fx-border-color : #800080;
+    -fx-border-witdh : 2;
+}
+
+.right-side-border
+{
+    -fx-bordoer-color: #800080;
+    -fx-border-witdh : 0 2 0 0;
+}

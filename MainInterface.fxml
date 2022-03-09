@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="408.0" prefWidth="605.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.connexioncultun.tests.MainInterfaceController">
+   <children>
+      <Button layoutX="14.0" layoutY="140.0" mnemonicParsing="false" onAction="#AfficherAct" prefHeight="71.0" prefWidth="154.0" stylesheets="@../css/fullPackStyling.css" text="Consulter les activités" textFill="WHITE" />
+      <Button layoutX="422.0" layoutY="140.0" mnemonicParsing="false" onAction="#AfficherTra" prefHeight="71.0" prefWidth="154.0" stylesheets="@../css/fullPackStyling.css" text="Consulter les transports" textFill="WHITE" />
+      <Separator layoutX="186.0" layoutY="111.0" orientation="VERTICAL" prefHeight="200.0" stylesheets="@../css/fullPackStyling.css" />
+      <Button layoutX="25.0" layoutY="241.0" mnemonicParsing="false" onAction="#AfficherAct" stylesheets="@../css/fullPackStyling.css" text="Reserver une activitée" textFill="WHITE" />
+      <Button layoutX="404.0" layoutY="241.0" mnemonicParsing="false" onAction="#AfficherTra" prefHeight="25.0" prefWidth="190.0" stylesheets="@../css/fullPackStyling.css" text="Réserver un moyen de transport" textFill="WHITE" />
+      <Label layoutX="220.0" layoutY="41.0" text="Bienvenue ">
+         <font>
+            <Font name="System Bold Italic" size="30.0" />
+         </font>
+      </Label>
+      <Separator layoutX="390.0" layoutY="111.0" orientation="VERTICAL" prefHeight="200.0" stylesheets="@../css/fullPackStyling.css" />
+      <Button layoutX="203.0" layoutY="151.0" mnemonicParsing="false" onAction="#AffichRes" stylesheets="@../css/fullPackStyling.css" text="Consulter les réservations" textFill="WHITE" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="471.0" prefWidth="751.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.connexioncultun.tests.AfficherTransportController">
+   <children>
+      <TableView fx:id="tvTransport" prefHeight="405.0" prefWidth="755.0" stylesheets="@../css/fullPackStyling.css">
+        <columns>
+          <TableColumn fx:id="tcType" prefWidth="70.0" text="Type" />
+          <TableColumn fx:id="tcDepart" text="Départ" />
+            <TableColumn fx:id="tcDestination" prefWidth="75.0" text="Destination" />
+            <TableColumn fx:id="tcDate_depart" prefWidth="75.0" text="Date départ" />
+            <TableColumn fx:id="tcHeure_depart" prefWidth="94.0" text="Heure départ" />
+            <TableColumn fx:id="tcDate_arrivee" prefWidth="78.0" text="Date arrivée" />
+            <TableColumn fx:id="tcHeure_arrivee" prefWidth="88.0" text="Heure arrivée" />
+            <TableColumn fx:id="tcNombre_places" prefWidth="115.0" text="Nombre de places" />
+            <TableColumn fx:id="tcPrix" prefWidth="47.0" text="Prix" />
+            <TableColumn fx:id="tcID" prefWidth="32.0" text="ID" />
+        </columns>
+      </TableView>
+      <Button layoutX="217.0" layoutY="420.0" mnemonicParsing="false" onAction="#supprimerTransport" prefHeight="25.0" prefWidth="119.0" stylesheets="@../css/fullPackStyling.css" text="Supprimer" textFill="WHITE" />
+      <Button layoutX="345.0" layoutY="420.0" mnemonicParsing="false" onAction="#ModifierTransport" prefHeight="25.0" prefWidth="119.0" stylesheets="@../css/fullPackStyling.css" text="Modifier" textFill="WHITE" />
+      <Button layoutX="471.0" layoutY="420.0" mnemonicParsing="false" onAction="#AlletAjout" prefHeight="25.0" prefWidth="119.0" stylesheets="@../css/fullPackStyling.css" text="Ajouter" textFill="WHITE" />
+      <Button layoutX="33.0" layoutY="420.0" mnemonicParsing="false" onAction="#Back" stylesheets="@../css/fullPackStyling.css" text="Retour" textFill="WHITE" />
+      <Button fx:id="btnres" layoutX="597.0" layoutY="420.0" mnemonicParsing="false" onAction="#placerres" stylesheets="@../css/fullPackStyling.css" text="Continuer reservation" textFill="WHITE" />
+   </children>
+</AnchorPane>

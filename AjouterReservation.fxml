@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="428.0" prefWidth="808.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.connexioncultun.tests.AjouterReservationController">
+   <children>
+      <Label layoutX="146.0" layoutY="50.0" prefHeight="36.0" prefWidth="404.0" text="Compléter les données nécessaires">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="136.0" text="Nom :" />
+      <Label layoutX="29.0" layoutY="185.0" text="Prénom :" />
+      <Label layoutX="26.0" layoutY="234.0" text="Nombre de places :" />
+      <Label layoutX="411.0" layoutY="136.0" text="Numéro de téléphone :" />
+      <Label layoutX="411.0" layoutY="185.0" text="Email :" />
+      <Separator layoutX="393.0" layoutY="106.0" orientation="VERTICAL" prefHeight="200.0" />
+      <TextField fx:id="tfNom" layoutX="155.0" layoutY="131.0" prefHeight="35.0" prefWidth="199.0" promptText="Nom du participant" style="-fx-border-color: purple; -fx-border-width: 2;" stylesheets="@../css/LoginClient.css" />
+      <TextField fx:id="tfPrenom" layoutX="155.0" layoutY="180.0" prefHeight="35.0" prefWidth="199.0" promptText="Prénom du participant" style="-fx-border-color: purple; -fx-border-width: 2;" stylesheets="@../css/LoginClient.css" />
+      <TextField fx:id="tfNbre_places" layoutX="155.0" layoutY="228.0" prefHeight="35.0" prefWidth="199.0" promptText="Indiquer le nombre " style="-fx-border-color: purple; -fx-border-width: 2;" stylesheets="@../css/LoginClient.css" />
+      <TextField fx:id="tfNum_tel" layoutX="573.0" layoutY="131.0" promptText="Votre numéro de téléphone ici" style="-fx-border-color: purple; -fx-border-width: 2;" stylesheets="@../css/LoginClient.css" />
+      <TextField fx:id="tfEmail" layoutX="573.0" layoutY="180.0" promptText="Votre adresse mail" style="-fx-border-color: purple; -fx-border-width: 2;" stylesheets="@../css/LoginClient.css" />
+      <Button layoutX="516.0" layoutY="319.0" mnemonicParsing="false" onAction="#PlacerReservation" prefHeight="31.0" prefWidth="163.0" stylesheets="@../css/fullPackStyling.css" text="Placer réservation" textFill="WHITE" />
+      <Button layoutX="433.0" layoutY="319.0" mnemonicParsing="false" onAction="#back" stylesheets="@../css/fullPackStyling.css" text="Retour" textFill="WHITE" />
+   </children>
+</AnchorPane>
